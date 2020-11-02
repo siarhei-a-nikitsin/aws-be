@@ -1,6 +1,6 @@
 import productsData from "../data/products.json";
 
-const getProducts = async () => Promise.resolve(productsData)
+const getProducts = async () => productsData;
 
 const getProductById = async productId => {
     const products = await getProducts();

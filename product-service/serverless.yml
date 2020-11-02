@@ -24,4 +24,8 @@ functions:
       - http:
           path: products/{id}
           method: get
+          request:
+            parameters:
+              paths:
+                id: true
           cors: true
