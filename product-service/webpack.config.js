@@ -1,3 +1,5 @@
+const { IgnorePlugin } = require('webpack');
+
 module.exports = {
   target: 'node',
   module: {
@@ -8,5 +10,10 @@ module.exports = {
         loader: 'babel-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new IgnorePlugin({
+        resourceRegExp: /^pg-native$/,
+    }),
+  ]
 };
