@@ -20,9 +20,11 @@
   "dependencies": {
     "@middy/core": "^1.4.0",
     "@middy/http-cors": "^1.4.0",
+    "aws-sdk": "^2.797.0",
     "joi": "^17.3.0",
     "middy-autoproxyresponse": "^0.1.0",
     "pg": "^8.4.2",
+    "pg-format": "^1.0.4",
     "uuid": "^8.3.1"
   }
 }
