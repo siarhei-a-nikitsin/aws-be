@@ -1,4 +1,4 @@
-export default error => ({
+export default (error) => ({
   statusCode: 500,
-  body: JSON.stringify({ error: "Internal server error", details: error })
+  body: JSON.stringify({ error: 'Internal server error', details: error }),
 });

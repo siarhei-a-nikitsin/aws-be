@@ -1,4 +1,4 @@
-export const BUCKET = "imported-files";
+export const BUCKET = 'imported-files';
 
 export const UPLOADED_FOLDER = 'uploaded/';
 

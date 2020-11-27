@@ -1,5 +1,4 @@
-import { SQS } from "aws-sdk";
-
+import { SQS } from 'aws-sdk';
 
 const getSQS = () => new SQS();
 

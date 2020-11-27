@@ -1,5 +1,5 @@
 class ValidationError extends Error {
-  constructor(message = "bad data") {
+  constructor(message = 'bad data') {
     super(message);
   }
 }

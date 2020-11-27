@@ -1,6 +1,8 @@
-import { Client } from "pg";
+import { Client } from 'pg';
 
-const { PG_HOST, PG_PORT, PG_DATABASE, PG_USERNAME, PG_PASSWORD } = process.env;
+const {
+  PG_HOST, PG_PORT, PG_DATABASE, PG_USERNAME, PG_PASSWORD,
+} = process.env;
 
 export const createClient = (dbOptions = {}) => {
   const defaultDbOptions = {
@@ -8,8 +10,8 @@ export const createClient = (dbOptions = {}) => {
     port: PG_PORT,
     database: PG_DATABASE,
     user: PG_USERNAME,
-    password: PG_PASSWORD
+    password: PG_PASSWORD,
   };
 
-  return new Client({...defaultDbOptions, ...dbOptions});
+  return new Client({ ...defaultDbOptions, ...dbOptions });
 };

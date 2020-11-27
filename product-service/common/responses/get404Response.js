@@ -1,4 +1,4 @@
-export default error => ({
+export default (error) => ({
   statusCode: 404,
-  body: JSON.stringify({ error: error && error.message })
+  body: JSON.stringify({ error: error && error.message }),
 });
